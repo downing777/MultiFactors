@@ -45,10 +45,10 @@ Factors .\* sign(IC) .mean()
 
 #### SVR
 
-'factor_svr'
+'factor_svr', trained on google Colab
 
 - 滚动训练，每12期更新模型参数，incremental learning，新增12个月数据训练而非当前所有数据
-- 年化 0.134655， 信息比率1.276015
+- 年化 **0.134655**， 信息比率**1.276015**
 
 #### SVR + RFE
 
@@ -59,3 +59,10 @@ Recursive Feature Elimination, 'factor_svr_rfe‘
 
 - 一个地方有隐患，这里对测试集（预测下一期）标准化使用的是测试集的均值和方差，是维持mean 0 std1 还是维持和训练集一样的map？
 - ...
+
+#### RF
+
+- 特征少，无法区分
+- default 参数，回测指数暴跌
+- 。。。
+- 
